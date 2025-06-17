@@ -10144,3 +10144,64 @@ h6,
     border-right: none !important;
   }
 }
+/* ========================
+   Login / Register Section
+   ======================== */
+
+.auth-page {
+  background-color: #f7f9fc;
+  font-family: 'Poppins', sans-serif;
+}
+
+.text-pink {
+  color: #d6336c;
+}
+
+.btn-pink {
+  background-color: #d6336c;
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+
+.btn-pink:hover {
+  background-color: #bf2b5f;
+}
+
+.register-section .card {
+  border-radius: 10px;
+}
+.order-page {
+  background-color: #fff8fb;
+  font-family: 'Poppins', sans-serif;
+}
+
+.text-pink {
+  color: #d6336c;
+}
+
+.btn-pink {
+  background-color: #d6336c;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+
+.btn-pink:hover {
+  background-color: #bf2b5f;
+}
+
+.ice-card {
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  overflow: hidden;
+}
+
+.ice-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 1.2rem;
+}

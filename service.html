@@ -53,7 +53,7 @@
                     </a>
                     <div class="navbar-nav mr-auto py-0">
                         <a href="service.html" class="nav-item nav-link active">Login</a>
-                        <a href="gallery.html" class="nav-item nav-link">Gallery</a>
+                        <a href="gallery.html" class="nav-item nav-link">Order</a>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
                 </div>
@@ -78,55 +78,91 @@
 
 
        <!-- Contact Start -->
-    <body>
-  <h2>สมัครสมาชิก</h2>
-  <form id="registerForm">
-    <input type="text" id="regUsername" placeholder="Username" required />
-    <input type="password" id="regPassword" placeholder="Password" required />
-    <button type="submit">Register</button>
-  </form>
+ <!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>Login / Register</title>
+  <link rel="stylesheet" href="auth.css">
 
-  <h2>เข้าสู่ระบบ</h2>
-  <form id="loginForm">
-    <input type="text" id="loginUsername" placeholder="Username" required />
-    <input type="password" id="loginPassword" placeholder="Password" required />
-    <button type="submit">Login</button>
-  </form>
+</head>
+<body class="auth-page">
+
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+
+        <!-- Switch Tabs -->
+        <ul class="nav nav-tabs mb-4 justify-content-center" id="authTab">
+          <li class="nav-item">
+            <a class="nav-link active" id="login-tab" href="#" onclick="showForm('login')">Sign In</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="register-tab" href="#" onclick="showForm('register')">Register</a>
+          </li>
+        </ul>
+
+        <!-- Login Form -->
+        <div class="card p-4 shadow-sm" id="loginForm">
+          <h4 class="text-center text-pink mb-4">Sign In</h4>
+          <form action="/login" method="POST">
+            <div class="form-group">
+              <input type="text" class="form-control" name="username" placeholder="Username" required>
+            </div>
+            <div class="form-group">
+              <input type="password" class="form-control" name="password" placeholder="Password" required>
+            </div>
+            <button type="submit" class="btn btn-success btn-block">LOGIN</button>
+          </form>
+        </div>
+
+        <!-- Register Form -->
+        <div class="card p-4 shadow-sm d-none" id="registerForm">
+          <h4 class="text-center text-pink mb-4">Register</h4>
+          <form action="/register" method="POST">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input type="text" name="firstname" class="form-control" placeholder="First name" required>
+              </div>
+              <div class="form-group col-md-6">
+                <input type="text" name="lastname" class="form-control" placeholder="Last name" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <select class="form-control" name="category" required>
+                <option value="">Role</option>
+                <option value="student">Student</option>
+                <option value="worker">Worker</option>
+                <option value="Ordinary people">Ordinary people</option>
+              </select>
+            </div>
+           
+            <div class="form-group">
+              <input type="email" name="email" class="form-control" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+              <input type="password" name="password" class="form-control" placeholder="Password" required>
+            </div>
+            <button type="submit" class="btn btn-pink btn-block">REGISTER</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
 
   <script>
-    // Register
-    document.getElementById("registerForm").addEventListener("submit", async function (e) {
-      e.preventDefault();
-      const username = document.getElementById("regUsername").value;
-      const password = document.getElementById("regPassword").value;
+    function showForm(form) {
+      document.getElementById('loginForm').classList.toggle('d-none', form !== 'login');
+      document.getElementById('registerForm').classList.toggle('d-none', form !== 'register');
 
-      const res = await fetch("/api/register", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ username, password })
-      });
-
-      const data = await res.json();
-      alert(data.message);
-    });
-
-    // Login
-    document.getElementById("loginForm").addEventListener("submit", async function (e) {
-      e.preventDefault();
-      const username = document.getElementById("loginUsername").value;
-      const password = document.getElementById("loginPassword").value;
-
-      const res = await fetch("/api/login", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ username, password })
-      });
-
-      const data = await res.json();
-      alert(data.message);
-    });
+      document.getElementById('login-tab').classList.toggle('active', form === 'login');
+      document.getElementById('register-tab').classList.toggle('active', form === 'register');
+    }
   </script>
 </body>
+</html>
+
     <!-- Contact End -->
 
 
