@@ -2,223 +2,443 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>iCREAM - Ice Cream Shop Website Template</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
+  <meta charset="utf-8">
+  <title>iCREAM - Ice Cream Shop Website Template</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="Free HTML Templates" name="keywords">
+  <meta content="Free HTML Templates" name="description">
 
-    <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+  <!-- Favicon -->
+  <link href="img/favicon.ico" rel="icon">
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  <!-- Libraries Stylesheet -->
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+  <!-- Customized Bootstrap Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+  <style>
+    /* Add some basic styling for the message box */
+    .message-box {
+      padding: 10px;
+      margin-top: 15px;
+      border-radius: 5px;
+      display: none;
+      /* Hidden by default */
+    }
+
+    .message-box.block {
+      display: block;
+    }
+
+    .message-box.bg-red-100 {
+      background-color: #fce8e6;
+    }
+
+    .message-box.text-red-700 {
+      color: #c0392b;
+    }
+
+    .message-box.bg-green-100 {
+      background-color: #e6fce8;
+    }
+
+    .message-box.text-green-700 {
+      color: #27ae60;
+    }
+
+    .message-box.bg-blue-100 {
+      background-color: #e8f0fe;
+    }
+
+    .message-box.text-blue-700 {
+      color: #3498db;
+    }
+  </style>
 </head>
 
 <body>
-    <!-- Topbar Start -->
-   
-    <!-- Topbar End -->
+  <!-- Topbar Start -->
+
+  <!-- Topbar End -->
 
 
-    <!-- Navbar Start -->
-    <div class="container-fluid position-relative nav-bar p-0">
-        <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
-            <nav class="navbar navbar-expand-lg bg-white navbar-light shadow p-lg-0">
-                <a href="index.html" class="navbar-brand d-block d-lg-none">
-                    <h1 class="m-0 display-4 text-primary"><span class="text-secondary">i</span>CREAM</h1>
-                </a>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
-                    <div class="navbar-nav ml-auto py-0">
-                        <a href="index.html" class="nav-item nav-link">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
-                        <a href="product.html" class="nav-item nav-link">Product</a>
-                    </div>
-                    <a href="index.html" class="navbar-brand mx-5 d-none d-lg-block">
-                        <h1 class="m-0 display-4 text-primary"><span class="text-secondary">Uruguay     i</span>CREAM</h1>
-                    </a>
-                    <div class="navbar-nav mr-auto py-0">
-                        <a href="login.html" class="nav-item nav-link active">Login</a>
-                        <a href="order.html" class="nav-item nav-link">Order</a>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
-                    </div>
-                </div>
-            </nav>
+  <!-- Navbar Start -->
+  <div class="container-fluid position-relative nav-bar p-0">
+    <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
+      <nav class="navbar navbar-expand-lg bg-white navbar-light shadow p-lg-0">
+        <a href="index.html" class="navbar-brand d-block d-lg-none">
+          <h1 class="m-0 display-4 text-primary"><span class="text-secondary">i</span>CREAM</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+          <div class="navbar-nav ml-auto py-0">
+            <a href="index.html" class="nav-item nav-link">Home</a>
+            <a href="about.html" class="nav-item nav-link">About</a>
+            <a href="product.html" class="nav-item nav-link">Product</a>
+          </div>
+          <a href="index.html" class="navbar-brand mx-5 d-none d-lg-block">
+            <h1 class="m-0 display-4 text-primary"><span class="text-secondary">Uruguay i</span>CREAM</h1>
+          </a>
+          <div class="navbar-nav mr-auto py-0">
+            <a href="login.html" class="nav-item nav-link active">Login</a>
+            <a href="order.html" class="nav-item nav-link">Order</a>
+            <a href="contact.html" class="nav-item nav-link">Contact</a>
+          </div>
         </div>
+      </nav>
     </div>
-    <!-- Navbar End -->
+  </div>
+  <!-- Navbar End -->
 
 
-    <!-- Header Start -->
-    <div class="jumbotron jumbotron-fluid page-header" style="margin-bottom: 90px;">
-        <div class="container text-center py-5">
-            <h1 class="text-white display-3 mt-lg-5">Login</h1>
-            <div class="d-inline-flex align-items-center text-white">
-                <p class="m-0"><a class="text-white" href="">Home</a></p>
-                <i class="fa fa-circle px-3"></i>
-                <p class="m-0">Login</p>
-            </div>
-        </div>
-    </div>
-    <!-- Header End -->
-
-
-       <!-- Contact Start -->
- <!DOCTYPE html>
-<html lang="th">
-<head>
-  <meta charset="UTF-8">
-  <title>Login / Register</title>
-  <link rel="stylesheet" href="auth.css">
-
-</head>
-<body class="auth-page">
-
-  <div class="container mt-5">
-    <div class="row justify-content-center">
-      <div class="col-md-6">
-
-        <!-- Switch Tabs -->
-        <ul class="nav nav-tabs mb-4 justify-content-center" id="authTab">
-          <li class="nav-item">
-            <a class="nav-link active" id="login-tab" href="#" onclick="showForm('login')">Sign In</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" id="register-tab" href="#" onclick="showForm('register')">Register</a>
-          </li>
-        </ul>
-
-        <!-- Login Form -->
-        <div class="card p-4 shadow-sm" id="loginForm">
-          <h4 class="text-center text-pink mb-4">Sign In</h4>
-          <form action="/login" method="POST">
-            <div class="form-group">
-              <input type="text" class="form-control" name="username" placeholder="Username" required>
-            </div>
-            <div class="form-group">
-              <input type="password" class="form-control" name="password" placeholder="Password" required>
-            </div>
-            <button type="submit" class="btn btn-success btn-block">LOGIN</button>
-          </form>
-        </div>
-
-        <!-- Register Form -->
-        <div class="card p-4 shadow-sm d-none" id="registerForm">
-          <h4 class="text-center text-pink mb-4">Register</h4>
-          <form action="/register" method="POST">
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <input type="text" name="firstname" class="form-control" placeholder="First name" required>
-              </div>
-              <div class="form-group col-md-6">
-                <input type="text" name="lastname" class="form-control" placeholder="Last name" required>
-              </div>
-            </div>
-            <div class="form-group">
-              <select class="form-control" name="category" required>
-                <option value="">Role</option>
-                <option value="student">Student</option>
-                <option value="worker">Worker</option>
-                <option value="Ordinary people">Ordinary people</option>
-              </select>
-            </div>
-           
-            <div class="form-group">
-              <input type="email" name="email" class="form-control" placeholder="Email" required>
-            </div>
-            <div class="form-group">
-              <input type="password" name="password" class="form-control" placeholder="Password" required>
-            </div>
-            <button type="submit" class="btn btn-pink btn-block">REGISTER</button>
-          </form>
-        </div>
-
+  <!-- Header Start -->
+  <div class="jumbotron jumbotron-fluid page-header" style="margin-bottom: 90px;">
+    <div class="container text-center py-5">
+      <h1 class="text-white display-3 mt-lg-5">Login</h1>
+      <div class="d-inline-flex align-items-center text-white">
+        <p class="m-0"><a class="text-white" href="">Home</a></p>
+        <i class="fa fa-circle px-3"></i>
+        <p class="m-0">Login</p>
       </div>
     </div>
   </div>
+  <!-- Header End -->
+
+
+  <!-- Contact Start -->
+  <!DOCTYPE html>
+  <html lang="th">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Login / Register</title>
+    <link rel="stylesheet" href="auth.css">
+
+  </head>
+
+  <body class="auth-page">
+
+    <div class="container py-5">
+      <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-5">
+          <div id="authContainer">
+            <ul class="nav nav-tabs mb-4 justify-content-center" id="authTab">
+              <li class="nav-item">
+                <a class="nav-link active" id="login-tab" href="#" onclick="showForm('login')">Sign In</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="register-tab" href="#" onclick="showForm('register')">Register</a>
+              </li>
+            </ul>
+
+            <div class="card p-4 shadow-sm" id="loginForm">
+              <h4 class="text-center text-pink mb-4">Sign In</h4>
+              <form id="loginFormSubmit">
+                <div class="form-group">
+                  <input id="login-email" name="login-email" type="email" class="form-control" placeholder="Email"
+                    required>
+                </div>
+                <div class="form-group">
+                  <input id="login-password" name="login-password" type="password" class="form-control"
+                    placeholder="Password" required>
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="rememberMe">
+                  <label class="form-check-label" for="rememberMe">Remember Me</label>
+                </div>
+                <button id="login-button" type="submit" class="btn btn-success btn-block">LOGIN</button>
+              </form>
+            </div>
+
+            <div class="card p-4 shadow-sm d-none" id="registerForm">
+              <h4 class="text-center text-pink mb-4">Register</h4>
+              <form id="registerFormSubmit">
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <input id="FnameReg" name="FnameReg" type="text" class="form-control" placeholder="First name"
+                      required>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <input id="LnameReg" name="LnameReg" type="text" class="form-control" placeholder="Last name"
+                      required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <select id="categoryReg" name="categoryReg" class="form-control" required>
+                    <option value="">Role</option>
+                    <option value="student">Student</option>
+                    <option value="worker">Worker</option>
+                    <option value="Ordinary people">Ordinary people</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <input id="EmailReg" name="EmailReg" type="email" class="form-control" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                  <input id="PasswordReg" name="PasswordReg" type="password" class="form-control" placeholder="Password"
+                    required>
+                </div>
+                <input id="submit-reg" type="submit" class="btn btn-pink btn-block" value="Register">
+              </form>
+            </div>
+          </div>
+
+          <div id="message-box" class="message-box" role="alert"></div>
+
+          <div id="loggedInUserDisplay" class="card p-4 shadow-sm mt-4 text-center d-none">
+            <h4 class="mb-3">Welcome, <span id="displayUserName"></span>!</h4>
+            <button class="btn btn-danger btn-block" onclick="logout()">Logout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script>
+      function showForm(form) {
+        document.getElementById('loginForm').classList.toggle('d-none', form !== 'login');
+        document.getElementById('registerForm').classList.toggle('d-none', form !== 'register');
+
+        document.getElementById('login-tab').classList.toggle('active', form === 'login');
+        document.getElementById('register-tab').classList.toggle('active', form === 'register');
+      }
+    </script>
+  </body>
+
+  </html>
+
+  <!-- Contact End -->
+
+
+  <!-- Footer Start -->
+  <div class="container-fluid footer bg-light py-5" style="margin-top: 90px;">
+    <div class="container text-center py-5">
+      <div class="row">
+        <div class="col-12 mb-4">
+          <a href="index.html" class="navbar-brand m-0">
+            <h1 class="m-0 mt-n2 display-4 text-primary"><span class="text-secondary">i</span>CREAM</h1>
+          </a>
+        </div>
+
+        <div class="col-12 mt-2 mb-4">
+          <div class="row">
+            <div class="col-sm-6 text-center text-sm-right border-right mb-3 mb-sm-0">
+              <h5 class="font-weight-bold mb-2">Get In Touch</h5>
+              <p class="mb-2">Chiang mai university <br> CMU Food Center 1st Floor </br> </p>
+              <p class="mb-0">+66 08888888888</p>
+            </div>
+            <div class="col-sm-6 text-center text-sm-left">
+              <h5 class="font-weight-bold mb-2">Opening Hours</h5>
+              <p class="mb-2">Mon – Sat, 8AM – 5PM</p>
+              <p class="mb-0">Sunday: Closed</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12">
+          <p class="m-0">&copy; <a href="#">Domain</a>. All Rights Reserved. Designed by <a
+              href="https://htmlcodex.com">HTML Codex</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer End -->
+
+
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-secondary px-2 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+  <!-- Contact Javascript File -->
+  <script src="mail/jqBootstrapValidation.min.js"></script>
+  <script src="mail/contact.js"></script>
+
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
 
   <script>
+
     function showForm(form) {
       document.getElementById('loginForm').classList.toggle('d-none', form !== 'login');
       document.getElementById('registerForm').classList.toggle('d-none', form !== 'register');
 
       document.getElementById('login-tab').classList.toggle('active', form === 'login');
       document.getElementById('register-tab').classList.toggle('active', form === 'register');
+
+
+      const messageBox = document.getElementById('message-box');
+      if (messageBox) {
+        messageBox.classList.add('d-none');
+      }
     }
+
+    // Display user
+    function showMessage(message, type = 'info') {
+      const messageBox = document.getElementById('message-box');
+      if (!messageBox) return;
+
+      messageBox.textContent = message;
+      messageBox.classList.remove('d-none', 'bg-red-100', 'text-red-700', 'bg-green-100', 'text-green-700', 'bg-blue-100', 'text-blue-700');
+      messageBox.classList.add('block');
+
+      if (type === 'error') {
+        messageBox.classList.add('bg-danger', 'text-white');
+      } else if (type === 'success') {
+        messageBox.classList.add('bg-success', 'text-white');
+      } else {
+        messageBox.classList.add('bg-info', 'text-white');
+      }
+
+
+      setTimeout(() => {
+        messageBox.classList.add('d-none');
+      }, 5000);
+    }
+
+    // Register ---
+    document.getElementById('registerFormSubmit').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      console.log('Register attempt');
+
+      const fname = document.getElementById('FnameReg').value;
+      const lname = document.getElementById('LnameReg').value;
+      const email = document.getElementById('EmailReg').value;
+      const password = document.getElementById('PasswordReg').value;
+      const category = document.getElementById('categoryReg').value;
+
+      const data = { fname, lname, email, password, category };
+
+      try {
+        const response = await fetch('http://localhost:4000/api/register', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        });
+        const result = await response.json();
+        showMessage(result.status, response.ok ? 'success' : 'error');
+
+        if (response.ok) {
+          showForm('login');
+          document.getElementById('registerFormSubmit').reset();
+        }
+
+      } catch (err) {
+        console.error("Register error:", err);
+        showMessage("An error occurred during registration. Please try again.", 'error');
+      }
+    });
+
+    //Login ---
+    async function loginUser() {
+      const email = document.getElementById("login-email").value.trim();
+      const password = document.getElementById("login-password").value.trim();
+      const rememberMe = document.getElementById('rememberMe').checked;
+
+      if (!email || !password) {
+        showMessage("Please enter both email and password.", 'error');
+        return;
+      }
+
+      const credentials = { email, password };
+
+      try {
+        const response = await fetch("http://localhost:4000/api/login", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(credentials),
+        });
+
+        const result = await response.json();
+
+        if (response.ok && result.status === "Login successfully.") {
+          showMessage(result.status, 'success');
+
+          if (rememberMe) {
+            localStorage.setItem('loggedInUserEmail', email);
+            localStorage.setItem('isLoggedIn', 'true');
+          } else {
+            sessionStorage.setItem('loggedInUserEmail', email);
+            sessionStorage.setItem('isLoggedIn', 'true');
+          }
+
+          setTimeout(() => {
+            window.location.href = 'index.html';
+          }, 1000);
+        } else {
+          showMessage(result.status || 'Login failed. Please try again.', 'error');
+        }
+      } catch (err) {
+        console.error("Login error:", err);
+        showMessage('An error occurred during login. Please try again later.', 'error');
+      }
+    }
+
+    //EventListener
+    document.getElementById("loginFormSubmit").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      loginUser();
+    });
+
+    //Logout
+    function logout() {
+      localStorage.removeItem('loggedInUserEmail');
+      localStorage.removeItem('isLoggedIn');
+      sessionStorage.removeItem('loggedInUserEmail');
+      sessionStorage.removeItem('isLoggedIn');
+      alert("You have been logged out.");
+      window.location.reload();
+    }
+
+    function checkLoginStatusOnLoginPage() {
+      let isLoggedIn = localStorage.getItem('isLoggedIn') === 'true' || sessionStorage.getItem('isLoggedIn') === 'true';
+      let userEmail = localStorage.getItem('loggedInUserEmail') || sessionStorage.getItem('loggedInUserEmail');
+
+      const authContainer = document.getElementById('authContainer');
+      const loggedInUserDisplay = document.getElementById('loggedInUserDisplay');
+      const displayUserName = document.getElementById('displayUserName');
+
+      if (isLoggedIn && userEmail) {
+        console.log(`User ${userEmail} is already logged in.`);
+        if (authContainer) authContainer.classList.add('d-none');
+        if (loggedInUserDisplay) loggedInUserDisplay.classList.remove('d-none');
+        if (displayUserName) displayUserName.textContent = userEmail;
+      } else {
+        console.log("No user logged in on this page.");
+        if (authContainer) authContainer.classList.remove('d-none');
+        if (loggedInUserDisplay) loggedInUserDisplay.classList.add('d-none');
+      }
+    }
+
+    //Eventlistener
+    document.addEventListener('DOMContentLoaded', () => {
+      showForm('login');
+      checkLoginStatusOnLoginPage();
+    });
+
   </script>
-</body>
-</html>
-
-    <!-- Contact End -->
-
-
-    <!-- Footer Start -->
-    <div class="container-fluid footer bg-light py-5" style="margin-top: 90px;">
-        <div class="container text-center py-5">
-            <div class="row">
-                <div class="col-12 mb-4">
-                    <a href="index.html" class="navbar-brand m-0">
-                        <h1 class="m-0 mt-n2 display-4 text-primary"><span class="text-secondary">i</span>CREAM</h1>
-                    </a>
-                </div>
-            
-                <div class="col-12 mt-2 mb-4">
-                    <div class="row">
-                        <div class="col-sm-6 text-center text-sm-right border-right mb-3 mb-sm-0">
-                            <h5 class="font-weight-bold mb-2">Get In Touch</h5>
-                            <p class="mb-2">Chiang mai university <br> CMU Food Center 1st Floor </br> </p>
-                            <p class="mb-0">+66 08888888888</p>
-                        </div>
-                        <div class="col-sm-6 text-center text-sm-left">
-                            <h5 class="font-weight-bold mb-2">Opening Hours</h5>
-                            <p class="mb-2">Mon – Sat, 8AM – 5PM</p>
-                            <p class="mb-0">Sunday: Closed</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12">
-                    <p class="m-0">&copy; <a href="#">Domain</a>. All Rights Reserved. Designed by <a href="https://htmlcodex.com">HTML Codex</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Footer End -->
-
-
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-secondary px-2 back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/isotope/isotope.pkgd.min.js"></script>
-    <script src="lib/lightbox/js/lightbox.min.js"></script>
-
-    <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+  <div class="container-fluid footer bg-light py-5" style="margin-top: 90px;">
+  </div>
+  <a href="#" class="btn btn-secondary px-2 back-to-top"><i class="fa fa-angle-double-up"></i></a>
 </body>
 
 </html>
