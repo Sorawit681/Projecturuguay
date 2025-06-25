@@ -22,5 +22,13 @@
     "email": "som6052522@gmail.com",
     "password": "12345",
     "category": "Ordinary people"
+  },
+  {
+    "userAt": "2025-06-25T14:49:20.514Z",
+    "fname": "tle",
+    "lname": "malone",
+    "email": "som60521112@gmail.com",
+    "password": "1234",
+    "category": "Ordinary people"
   }
 ]
